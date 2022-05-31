@@ -27,6 +27,4 @@ public class AddAddressRequest {
     @NotBlank(message = "lga required")
     @JsonProperty("lga")
     private String lga;
-
-    private Doctor doctor;
 }

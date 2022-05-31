@@ -10,4 +10,12 @@ public interface DoctorRepository extends JpaRepository<Doctor, Long> {
 
 
     Long countByEmailOrPhoneNumber(String email, String phone);
+
+    Boolean existsByIdNotAndEmailAndPhoneNumber(Long id, String email, String phone);
+
+    @Query(
+            value = "select count(*)>0 from doctor where id<>?1 and (email=?2 and phone=?3)",
+            nativeQuery = true
+    )
+    boolean checkifEmailandPhoneAssignedAlready(Long id, String email, String phone);
 }
