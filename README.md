@@ -68,14 +68,12 @@ To be able to run this Spring Boot app you will need to first build it. To build
 
 To run the Spring Boot app from a command line in a Terminal window you can you the java -jar command. This is provided your Spring Boot app was packaged as an executable jar file.
 
-    java -jar bcfInternationalTask-0.0.1-SNAPSHOT.jar
+    java -jar seamhealth-0.0.1-SNAPSHOT.jar
     
 # Clone from repository
 
     git clone https://github.com/ohmsmaestro/seamhealth.git
     
-# Default employee has the below id. Use the first person id to create order employee as indicated in POST EMPLOYEE
-    abcdef
 
 # Access H2 console
     url = http://localhost:9191/api/h2
